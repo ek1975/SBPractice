@@ -1,6 +1,7 @@
 package test.aj.SBPractice;
 
 /*
+Part A:
 1) Create a SB project from start.spring.io, add hello world and run it in IntelliJ
 2) Add an GetMapping for / endpoint in a new Rest controller class and access the app via localhost:8080
 3) Add project.author to app.prop and use @Value("${project.author}") to display it
@@ -13,8 +14,17 @@ management.endpoints.web.exposure.include=health,info
 management.info.env.enabled=true
 info.app.name=SB Practice
 info.app.description=Test Spring Boot features
-9) change health,info on the line above to * and test out actuator/beans & actuator/mappings
-management.endpoints.web.exposure.include=*
+9) change health,info on the line above to * (management.endpoints.web.exposure.include=*)
+and test out actuator/beans & actuator/mappings
+10) Add spring-boot-starter-security and access /health with user and generated console password
+11) Configure server in app.prop using the following, and test at http://localhost:8888/MyApp1/actuator/info
+logging.level.com.aj=INFO
+logging.file=aj1.log
+server.port=8888
+server.servlet.context-path=/MyApp1
+server.servlet.session.timeout=1m
+spring.security.user.name=andrew
+spring.security.user.password=joseph
  */
 
 import org.springframework.boot.SpringApplication;
