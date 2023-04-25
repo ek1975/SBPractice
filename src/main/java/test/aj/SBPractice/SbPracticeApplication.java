@@ -10,7 +10,7 @@ Part A:
 6) Add spring-boot-devtools to pom.xml, make changes to ensure hot reload is working.
 7) Add spring-boot-starter-actuator and test /actuator/health
 8) Add the following to app.prop and test out /actuator/info and ensure /actuator/health is still up
-management.endpoints.web.exposure.include=health,info
+management.endpoints.web.exposure.include=health,info //can specify exclude as well.
 management.info.env.enabled=true
 info.app.name=SB Practice
 info.app.description=Test Spring Boot features
