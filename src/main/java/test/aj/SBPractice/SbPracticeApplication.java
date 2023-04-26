@@ -41,6 +41,7 @@ the app to make sure the PingPongTip message comes through at /dailytip.
 
 9) @Primary: Remove @Qualifier from the RestController constructor, and add @Primary below @Component in the
 TennisTip class.  Run the app, and see @Primary come through in spite of multiple DailyTip implementations.
+10) Add a @PostConstruct and @PreDestroy method to TennisTip to test them out.
  */
 
 import org.springframework.boot.SpringApplication;

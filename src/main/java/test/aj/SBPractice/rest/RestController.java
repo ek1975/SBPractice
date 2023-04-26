@@ -16,6 +16,7 @@ public class RestController {
 
     @Autowired
     public RestController(SportsTip sportsTip) {
+        System.out.println("Loading class: " + getClass().getSimpleName());
         this.sportsTip = sportsTip;
     }
 
